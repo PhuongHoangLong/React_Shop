@@ -8,7 +8,7 @@ const images = () => {
   const [shop, setshop] = useState(null);
   useEffect(() => {
     console.log('images use effect!!');
-    let url = 'https://62b90e92ff109cd1dc8ad594.mockapi.io/Shop' + params.id;
+    let url = 'https://62b90e92ff109cd1dc8ad594.mockapi.io/Shop/' + params.id;
 
     console.log(url);
     fetch(url)
@@ -18,7 +18,7 @@ const images = () => {
 
         setshop(data); //setshops(data)
       });
-  }, []);
+  }, [params.id]);
 
   return (
     <>
