@@ -12,7 +12,7 @@ const Category = () => {
     console.log('user use effect!!');
 
     let url =
-      'https://62b90e92ff109cd1dc8ad594.mockapi.io/Shop' +
+      'https://62b90e92ff109cd1dc8ad594.mockapi.io/shop' +
       params.name;
 
     console.log(url);
