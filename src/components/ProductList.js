@@ -13,22 +13,21 @@ function ProductList(props) {
   var products_jsx = [];
   if (products != null) {
     products_jsx = products.map((item) => (
-      <div className="card col-sm-4">
-        <img
-          className="card-img-top mt-3"
-          src={item.picture}
-          alt="Card image"
-        />
-        <div className="card-body">
-          <h4 className="card-title">{item.name}</h4>
-          <p className="card-text">{item.category}</p>
-          <p className="card-text">${item.price}</p>
-          <button className="btn btn-primary">Buy</button>
+      <div style={{ margin: '10px' }} class=" card col-md-3 ">
+        <img className="card-img mt-3" src={item.images} />
+        <div className="text-center">
+          <p class="title h5 text-center">{item.name}</p>
+          <p class="title h5 text-center">{item.price}đ</p>
+          <button class="btn btn-primary">Buy</button>
         </div>
       </div>
     ));
   }
-  return <div className="row card-deck ">{products_jsx}</div>;
+  return (
+    <div className="container">
+      <div className="card-deck ">{products_jsx}</div>;
+    </div>
+  );
 }
 
 export default ProductList;

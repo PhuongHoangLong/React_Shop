@@ -13,7 +13,7 @@ export default function App() {
 
   useEffect(() => {
     console.log('app useeffect!!');
-    let url = 'https://60efed10f587af00179d3b82.mockapi.io/api/products';
+    let url = 'https://62b90e92ff109cd1dc8ad594.mockapi.io/Shop';
 
     fetch(url)
       .then((response) => response.json())
@@ -36,7 +36,7 @@ export default function App() {
     console.log('searchTerm', searchTerm);
     console.log('app useeffect!!');
     let url =
-      'https://60efed10f587af00179d3b82.mockapi.io/api/products?name=' +
+      'https://62b90e92ff109cd1dc8ad594.mockapi.io/Shop?name=' +
       searchTerm;
 
     fetch(url)
