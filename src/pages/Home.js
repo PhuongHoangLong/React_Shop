@@ -7,7 +7,7 @@ import '../App.css';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function App() {
-  const [products, setProducts] = useState(null);
+  const [shop, setShop] = useState(null);
   const [categories, setCategories] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -18,12 +18,12 @@ export default function App() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data);
+        setShop(data);
       });
 
     console.log('app useeffect!!');
     let url_category =
-      'https://60efed10f587af00179d3b82.mockapi.io/category';
+      'https://62b90e92ff109cd1dc8ad594.mockapi.io/category';
 
     fetch(url_category)
       .then((response) => response.json())
@@ -43,7 +43,7 @@ export default function App() {
       .then((response) => response.json())
       .then((data) => {
         setSearchTerm('');
-        setProducts(data);
+        setShop(data);
       });
   };
 
@@ -96,8 +96,8 @@ export default function App() {
       </div>
       {category_jsx}
       <div className="container">
-        <h1>Our New Products</h1>
-        <ProductList data={products}></ProductList>
+        <h1>Our New shop</h1>
+        <ProductList data={shop}></ProductList>
       </div>
     </div>
   );

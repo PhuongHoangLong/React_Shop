@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "@types/react": ">=16.14.8",
-    "react": "18.2.0",
+    "react": ">=16.14.0 ^18.2.0 >=16.8",
     "react-bootstrap": "^2.4.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "6.3.0"
+    "react-dom": ">=16.14.0 >=16.8",
+    "react-router-dom": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
