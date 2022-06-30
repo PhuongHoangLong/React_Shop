@@ -157,13 +157,7 @@ const AddNew = () => {
                           <strong>Picture</strong>
                         </td>
                         <td class="text-primary">
-                          <img src={shop.picture} className="img-circle" />
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <strong>Date Of Birth</strong>
+                          <img src={shop.pictures} className="img-circle" />
                         </td>
                       </tr>
                     </tbody>

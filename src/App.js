@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage';
 import Category from './pages/Category';
 import About from './pages/About';
 import AddNew from './pages/AddNew';
+import * as ReactDOM from 'react-dom';
 export default function App() {
   return (
     <BrowserRouter>
@@ -17,7 +18,7 @@ export default function App() {
           <Route path="category/:name" element={<Category />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="addnew" element={<AddNew />} />
+          <Route path="addnew/:id" element={<AddNew />} />
         </Route>
       </Routes>
     </BrowserRouter>

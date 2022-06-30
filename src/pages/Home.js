@@ -88,7 +88,7 @@ export default function App() {
               >
                 Search
               </button>
-              <Link to={'/addnew'}>
+              <Link to="/addnew/new">
                 <button className="btn btn-primary">
                   <i class="fa-solid fa-plus"></i> Add
                 </button>
