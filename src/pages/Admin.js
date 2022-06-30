@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Admin() {
   const [shop, setShop] = useState(null);
   const [direction, setDirection] = useState(1);
@@ -42,7 +41,7 @@ function Admin() {
   var myList = [];
   if (shop != null) {
     myList = shop.map((item) => (
-      <tr 
+      <tr
         key={item.id}
         className={
           item.Price >= 50.0
@@ -52,12 +51,14 @@ function Admin() {
             : 'danger'
         }
       >
-        <td >{item.id}</td>
+        <td>{item.id}</td>
         <td>{item.title}</td>
         <td>{item.category}</td>
         <td>{item.Price}</td>
 
-        <td>{item.pictures}</td>
+        <td>
+          <img style={{ width: '20%' }} src={item.pictures} />
+        </td>
         <td>{<Link to="/">Detail</Link>}</td>
         <td>
           {
@@ -79,16 +80,16 @@ function Admin() {
   }
   return (
     <div className="container">
-      <table className="table">
+      <table className="table-hover">
         <tr>
-          <th >Id</th>
-          <th  onClick={() => sortColumn('title', 'string')}>Tiltle</th>
+          <th>Id</th>
+          <th onClick={() => sortColumn('title', 'string')}>Tiltle</th>
           <th onClick={() => sortColumn('category', 'string')}>Category</th>
           <th onClick={() => sortColumn('Price', 'number')}>Price</th>
           <th>Picture</th>
           <th>Detail</th>
         </tr>
-        <tr className='success'>
+        <tr className="success">
           <td> King</td>
         </tr>
         {myList}

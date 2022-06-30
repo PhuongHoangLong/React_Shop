@@ -18,8 +18,8 @@ function ProductList(props) {
   var products_jsx = [];
   if (shop != null) {
     products_jsx = shop.map((item) => (
-      <div className="card">
-        <div style={{ margin: '10px' }} class=" card col-md-3 ">
+      <div className="row">
+        <div style={{ margin: '10px' }} class="col-sm-4 col-md-3">
           <img className="" src={item.pictures} />
           <div className="text-center">
             <p class="title h5 text-center">{item.title}</p>
@@ -33,7 +33,7 @@ function ProductList(props) {
   }
   return (
     <div className="container">
-      <div className="card-deck ">{products_jsx}</div>
+      <div>{products_jsx}</div>
     </div>
   );
 }
