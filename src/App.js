@@ -22,7 +22,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
           <Route path="addnew/:id" element={<AddNew />} />
           <Route path="admin" element={<Admin />} />
-          <Route path="buy " element={<Buy />} />
+          <Route path="buy/:id" element={<Buy />} />
         </Route>
       </Routes>
     </BrowserRouter>

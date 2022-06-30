@@ -25,7 +25,8 @@ function ProductList(props) {
             <p class="title h5 text-center">{item.title}</p>
             <p className=" category text-center text-danger">{item.category}</p>
             <p class="title h3 text-center text-primary">{item.Price}đ</p>
-            <Link to="buy">
+
+            <Link to={'/buy/' + item.id}>
               <button class="btn btn-primary">Buy</button>
             </Link>
           </div>
