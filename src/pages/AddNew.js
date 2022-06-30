@@ -156,8 +156,8 @@ const AddNew = () => {
                         <td>
                           <strong>Picture</strong>
                         </td>
-                        <td class="text-primary">
-                          <img src={shop.pictures} className="img-circle" />
+                        <td className="img">
+                          <img className="img-circle" src={shop.pictures} />
                         </td>
                       </tr>
                     </tbody>

@@ -89,9 +89,7 @@ function Admin() {
           <th>Picture</th>
           <th>Detail</th>
         </tr>
-        <tr className="success">
-          <td> King</td>
-        </tr>
+      
         {myList}
       </table>
     </div>

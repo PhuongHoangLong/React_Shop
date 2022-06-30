@@ -8,6 +8,7 @@ import NoPage from './pages/NoPage';
 import Category from './pages/Category';
 import About from './pages/About';
 import AddNew from './pages/AddNew';
+import Buy from './pages/Buy';
 import * as ReactDOM from 'react-dom';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
           <Route path="addnew/:id" element={<AddNew />} />
           <Route path="admin" element={<Admin />} />
+          <Route path="buy " element={<Buy />} />
         </Route>
       </Routes>
     </BrowserRouter>
