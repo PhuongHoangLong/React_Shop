@@ -28,7 +28,7 @@ const Buy = () => {
           <th colSpan="2" rowSpan="6">
             <img src={data.pictures} />
           </th>
-          <th  style={{ width: '100%' }} className="h2 text-center">
+          <th style={{ width: '100%' }} className="h2 text-center">
             Information
           </th>
         </tr>
