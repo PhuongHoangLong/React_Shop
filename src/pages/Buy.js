@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const Buy = () => {
   const [data, setData] = useState([]);
   const params = useParams();
-  const [phone, setPhone] = useState();
+
   useEffect(() => {
     console.log(' buy useEffect!!! ');
     let url = 'https://62b90e92ff109cd1dc8ad594.mockapi.io/shop/' + params.id;
