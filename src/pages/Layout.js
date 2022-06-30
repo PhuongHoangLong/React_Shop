@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Layout = () => {
   return (
     <>
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
             <button
@@ -38,7 +38,7 @@ const Layout = () => {
                 <a href="#contact">CONTACT</a>
               </li>
               <li>
-                <a href="#admin">ADMIN</a>
+                <a href="admin">Admin</a>
               </li>
             </ul>
           </div>

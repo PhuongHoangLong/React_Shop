@@ -26,7 +26,7 @@ const Category = () => {
 
   return (
     <div>
-      <div className="App-jumbotron jumbotron text-center ">
+      <div className="jumbotron jumbotron-fluid text-center ">
         <h1>{category_namme} Shop</h1>
         <p>Here We Go</p>
       </div>
