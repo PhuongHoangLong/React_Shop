@@ -22,8 +22,7 @@ export default function App() {
       });
 
     console.log('app useeffect!!');
-    let url_category =
-      'https://62b90e92ff109cd1dc8ad594.mockapi.io/category';
+    let url_category = 'https://62b90e92ff109cd1dc8ad594.mockapi.io/category';
 
     fetch(url_category)
       .then((response) => response.json())
@@ -36,8 +35,7 @@ export default function App() {
     console.log('searchTerm', searchTerm);
     console.log('app useeffect!!');
     let url =
-      'https://62b90e92ff109cd1dc8ad594.mockapi.io/shop?name=' +
-      searchTerm;
+      'https://62b90e92ff109cd1dc8ad594.mockapi.io/shop?name=' + searchTerm;
 
     fetch(url)
       .then((response) => response.json())
@@ -90,6 +88,11 @@ export default function App() {
               >
                 Search
               </button>
+              <Link to={'/addnew'}>
+                <button className="btn btn-primary">
+                  <i class="fa-solid fa-plus"></i> Add
+                </button>
+              </Link>
             </div>
           </div>
         </form>

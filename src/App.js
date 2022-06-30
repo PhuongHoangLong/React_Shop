@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import Category from './pages/Category';
 import About from './pages/About';
-
+import AddNew from './pages/AddNew';
 export default function App() {
   return (
     <BrowserRouter>
@@ -17,6 +17,7 @@ export default function App() {
           <Route path="category/:name" element={<Category />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="addnew" element={<AddNew />} />
         </Route>
       </Routes>
     </BrowserRouter>

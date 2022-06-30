@@ -37,6 +37,9 @@ const Layout = () => {
               <li>
                 <a href="#contact">CONTACT</a>
               </li>
+              <li>
+                <a href="#admin">ADMIN</a>
+              </li>
             </ul>
           </div>
         </div>
