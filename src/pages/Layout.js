@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Layout = () => {
+  
   return (
     <>
       <nav class="navbar navbar-default">
@@ -39,7 +40,7 @@ const Layout = () => {
               </li>
               <li>
                 <Link to="admin">Admin</Link>
-              </li>
+              </li>              
               <li></li>
             </ul>
           </div>

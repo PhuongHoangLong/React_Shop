@@ -10,7 +10,7 @@ import About from './pages/About';
 import AddNew from './pages/AddNew';
 import Buy from './pages/Buy';
 import * as ReactDOM from 'react-dom';
-import Edit from './pages/Edit'
+import Cart from './pages/Cart';
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="addnew/:id" element={<AddNew />} />
           <Route path="admin" element={<Admin />} />
           <Route path="buy/:id" element={<Buy />} />
-          {/* <Route path="edit/:id" element={<Edit />}/> */}
+          <Route path="cart" element={<Cart />}/>
         </Route>
       </Routes>
     </BrowserRouter>
