@@ -59,10 +59,10 @@ function Admin() {
         <td>
           <img style={{ width: '20%' }} src={item.pictures} />
         </td>
-        <td>{<Link to="/">Detail</Link>}</td>
+        <td>{<Link to={'/buy/' + item.id}>Detail</Link>}</td>
         <td>
           {
-            <Link to="/">
+            <Link to={'/addnew/' + item.id}>
               <button className="btn btn-primary"> Edit</button>
             </Link>
           }
@@ -80,8 +80,8 @@ function Admin() {
   }
   return (
     <div className="container">
-      <table className="table-hover">
-        <tr>
+      <table className="table">
+        <tr class="danger">
           <th>Id</th>
           <th onClick={() => sortColumn('title', 'string')}>Tiltle</th>
           <th onClick={() => sortColumn('category', 'string')}>Category</th>
@@ -89,7 +89,7 @@ function Admin() {
           <th>Picture</th>
           <th>Detail</th>
         </tr>
-      
+
         {myList}
       </table>
     </div>

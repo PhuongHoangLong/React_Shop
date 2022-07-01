@@ -131,7 +131,7 @@ const AddNew = () => {
                             type="text"
                             className="form-control"
                             value={shop.Price}
-                            name="lastName"
+                            name="Price"
                             onChange={(e) => handleChange(e)}
                           ></input>
                         </td>
@@ -146,7 +146,7 @@ const AddNew = () => {
                             type="text"
                             className="form-control"
                             value={shop.category}
-                            name="email"
+                            name="category"
                             onChange={(e) => handleChange(e)}
                           ></input>
                         </td>
