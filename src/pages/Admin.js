@@ -81,7 +81,7 @@ function Admin() {
   return (
     <div className="container">
       <table className="table">
-        <tr class="danger">
+        <tr>
           <th>Id</th>
           <th onClick={() => sortColumn('title', 'string')}>Tiltle</th>
           <th onClick={() => sortColumn('category', 'string')}>Category</th>
